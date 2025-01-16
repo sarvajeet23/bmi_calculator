@@ -13,9 +13,9 @@ class RoundIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return RawMaterialButton(
       disabledElevation: 0.0,
-      child: Icon(icon),
       elevation: 6.0,
       onPressed: onpressed,
+      child: Icon(icon),
     );
   }
 }
