@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables, sort_child_properties_last, use_key_in_widget_constructors
-
 import 'package:flutter/material.dart';
 import './resuable_card.dart';
 import './icon_content.dart';
@@ -9,12 +7,11 @@ import './round_icon_button.dart';
 import './calculator_brain.dart';
 import './resutl_page.dart';
 
-enum Gender {
-  male,
-  female,
-}
+enum Gender { male, female }
 
 class InputPage extends StatefulWidget {
+  const InputPage({Key? key}) : super(key: key);
+
   @override
   State<InputPage> createState() => _InputPageState();
 }
@@ -28,7 +25,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BIMCalcutor'),
+        title: const Text('BIMCalcutor'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -76,7 +73,7 @@ class _InputPageState extends State<InputPage> {
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'HEIGHT',
                     style: klabelTextStyle,
                   ),
@@ -90,7 +87,7 @@ class _InputPageState extends State<InputPage> {
                           height.toString(),
                           style: kNumberTextStyle,
                         ),
-                        Text(
+                        const Text(
                           'cm',
                           style: klabelTextStyle,
                         )
@@ -125,7 +122,7 @@ class _InputPageState extends State<InputPage> {
                   cardChild: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'WEIGHT',
                         style: klabelTextStyle,
                       ),
@@ -165,7 +162,7 @@ class _InputPageState extends State<InputPage> {
                   cardChild: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'AGE',
                         style: klabelTextStyle,
                       ),
